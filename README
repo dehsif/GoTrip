@@ -1,0 +1,36 @@
+GoTrip
+
+//
+
+Progettata per semplificare il lavoro quotidiano degli operatori porta a porta, 
+questa app trasforma la tua lista di indirizzi nel giro di consegne perfetto. 
+Grazie al calcolo intelligente del percorso, ottimizzi ogni spostamento, 
+tagli i costi del carburante e hai sempre sotto controllo lo stato delle 
+tue fermate in tempo reale.
+
+//
+
+Piano Front-end (Interfaccia Utente)
+L'obiettivo è offrire un'esperienza mobile-first fluida, dove l'operatore può visualizzare il percorso e gestire le tappe con pochi tap.
+-Framework & UI:
+Sviluppo cross-platform (es. Flutter o React Native) per garantire un'app leggera e reattiva sia su iOS che su Android.
+Libreria di componenti UI puliti e minimali per una consultazione rapida anche in movimento.
+-Mappe & Navigazione:
+Integrazione con SDK di mappe (es. Mapbox o Google Maps) per visualizzare i pin delle consegne e tracciare visivamente il percorso ottimizzato.
+Gestione dello Stato & Offline-First:
+Salvataggio locale dei dati (es. tramite SQLite o AsyncStorage) per permettere all'operatore di consultare la lista delle fermate anche in zone con scarsa ricezione internet.
+-Funzioni Chiave:
+Lista delle fermate ordinate con indicatori di stato (Completata, Da fare, Saltata).
+Pulsante rapido per avviare la navigazione GPS verso la tappa successiva.
+
+Piano Back-end (Logica & Dati)
+Un'architettura leggera e scalabile basata su API RESTful per gestire gli utenti, gli indirizzi e il calcolo dei percorsi.
+-Linguaggio & Framework:
+Node.js con Express o C# con ASP.NET Core Minimal APIs, ideali per la creazione rapida di endpoint leggeri e performanti.
+-Database:
+Database relazionale (es. PostgreSQL o SQLite) per gestire con precisione le relazioni tra Utenti/Operatori, Giri di consegna e singole Tappe.
+Algoritmo di Ottimizzazione (Routing):
+Modulo di geocodifica e calcolo del percorso (es. integrazione con OSRM - Open Source Routing Machine o Google Directions API) per risolvere il problema del commesso viaggiatore (TSP) e ordinare le fermate.
+-Autenticazione & Sicurezza:
+Sistema di autenticazione basato su Token (JWT) per proteggere le rotte API e consentire l'accesso sicuro ai soli operatori autorizzati.
+
